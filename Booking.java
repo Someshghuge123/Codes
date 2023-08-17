@@ -33,11 +33,11 @@ public class Booking extends BaseEntity {
 private User userId;
 
 @ManyToOne
-@JoinColumn(name="guide_id")
+@JoinColumn(name="Recruiter_id")
 private Guide guideId;
 
 @ManyToOne
-@JoinColumn(name="package_id")
+@JoinColumn(name="job_id")
 private TourPackages packageId;
 
 @Column
@@ -53,9 +53,7 @@ private LocalDate toDate;
 private BookingStatus status; 
 
 @Column 
-private LocalDateTime bookingDateAndTime; 
+private LocalDateTime AppliedDateAndTime; 
 
-@Column(length=600)
-private String pickUpLocation;
-	
+
 }
